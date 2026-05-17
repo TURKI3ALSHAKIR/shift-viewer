@@ -609,7 +609,7 @@ function buildUploadUI(){
     const el=document.createElement('div');
     el.className=`u-card ${state}`;el.id=`uc-${d.key}`;
     el.innerHTML=`
-      <div class="u-ico ${d.cls}">${d.icon}</div>
+      <div class="u-ico ${d.cls}">${DEPT_ICONS[d.key]||""}</div>
       <div class="u-info"><div class="u-name">${d.label}</div><div class="u-status" id="us-${d.key}">${status}</div></div>
       <div class="u-right">
         <div class="u-ind" id="ui-${d.key}">${isSaved?'✅':'📎'}</div>
